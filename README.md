@@ -14,15 +14,10 @@ A simple Flutter app using **Riverpod (MVVM)** to display smartphones from Dummy
 - **Dio** – HTTP requests
 - **DummyJSON API** – Free products API
 
-## Screenshots
+## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Screenshot](screenshots/screenshot_home.png)
-
-### 🛒 Cart Page
-
-#### Empty Cart
-![Empty Cart](screenshots/screenshot_cart_empty.png)
-
-#### Cart with Items
-![Cart With Items](screenshots/screenshot_cart_items.png)
+<p align="center">
+  <img src="screenshots/screenshot_home.png" width="250"/>
+  <img src="screenshots/screenshot_cart_empty.png" width="250"/>
+  <img src="screenshots/screenshot_cart_items.png" width="250"/>
+</p>
