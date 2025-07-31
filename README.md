@@ -18,6 +18,6 @@ A simple Flutter app using **Riverpod (MVVM)** to display smartphones from Dummy
 
 <p align="center">
   <img src="screenshots/screenshot_home.png" width="250"/>
-  <img src="screenshots/screenshot_cart_empty.png" width="250"/>
   <img src="screenshots/screenshot_cart_items.png" width="250"/>
+  <img src="screenshots/screenshot_cart_empty.png" width="250"/>
 </p>
