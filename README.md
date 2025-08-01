@@ -1,23 +1,22 @@
 # 📱 SmartCart
 
-A simple Flutter app using **Riverpod (MVVM)** to display smartphones from DummyJSON API with a shopping cart feature.
+A Flutter shopping cart app built with **MVVM architecture** using **Riverpod** for state management, **GoRouter** for navigation, and **Hero animations** for smooth transitions.
 
-## Features
-- Fetch smartphones from DummyJSON API
+## ✨ Features
+- Fetch smartphones from **DummyJSON API** using **Dio**
+- Display product list with name, price, and image
+- Smooth page transitions using **Hero widget** for product images
+- View product details with **GoRouter navigation**
 - Add/remove items from the cart
 - Animated cart badge on FloatingActionButton
-- MVVM architecture with **Riverpod** for state management
+- Clean **MVVM structure** (Model-View-ViewModel) with **Riverpod**
 
 ## 🛠 Tech Stack
 - **Flutter** – UI development
-- **Riverpod** – State management (MVVM pattern)
+- **Riverpod** – State management (MVVM)
+- **GoRouter** – Navigation & route management
+- **Hero widget** – Smooth shared element transitions between pages
 - **Dio** – HTTP requests
 - **DummyJSON API** – Free products API
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="screenshots/screenshot_home.png" width="250"/>
-  <img src="screenshots/screenshot_cart_items.png" width="250"/>
-  <img src="screenshots/screenshot_cart_empty.png" width="250"/>
-</p>
+## 📂 Project Structure

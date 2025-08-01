@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:smartcart/viewmodels/products_viewmodel.dart';
+import 'package:smartcart/widgets/appbar.dart';
 
 class CartPage extends ConsumerWidget {
   const CartPage({super.key});
@@ -10,14 +11,7 @@ class CartPage extends ConsumerWidget {
     final cart = ref.watch(cartProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Shopping cart'),
-        leading: IconButton(
-          onPressed: () => Navigator.of(context).pop(),
-          icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-        ),
-      ),
+      appBar: appBar("Shopping cart"),
       body: cart.isEmpty
           ? const Center(child: Text('The basket is empty'))
           : ListView.builder(
