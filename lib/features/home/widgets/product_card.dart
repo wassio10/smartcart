@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:smartcart/models/product.dart';
-import 'package:smartcart/viewmodels/products_viewmodel.dart';
+import 'package:smartcart/data/models/product.dart';
+import 'package:smartcart/shared/providers/products_provider.dart';
 
 class ProductCard extends ConsumerWidget {
   final Product product;
@@ -65,12 +65,16 @@ class ProductCard extends ConsumerWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        "\$${product.price.toStringAsFixed(2)}",
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.green,
+                      Expanded(
+                        child: Text(
+                          "\$${product.price.toStringAsFixed(2)}",
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                         ),
                       ),
                       ElevatedButton(
@@ -84,7 +88,6 @@ class ProductCard extends ConsumerWidget {
                           }
                         },
                         style: ElevatedButton.styleFrom(
-                          shape: const CircleBorder(),
                           padding: const EdgeInsets.all(8),
                           backgroundColor: alreadyInCart
                               ? Colors.red

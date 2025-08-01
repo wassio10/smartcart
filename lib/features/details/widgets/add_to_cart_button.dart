@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:smartcart/models/product.dart';
-import 'package:smartcart/viewmodels/products_viewmodel.dart';
+import 'package:smartcart/data/models/product.dart';
+import 'package:smartcart/shared/providers/products_provider.dart';
 
 class AddToCartButton extends ConsumerWidget {
   final Product product;

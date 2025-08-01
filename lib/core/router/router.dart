@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:smartcart/models/product.dart';
-import 'package:smartcart/views/home/home_page.dart';
-import 'package:smartcart/views/cart/cart_page.dart';
-import 'package:smartcart/views/details/details_page.dart';
+import 'package:smartcart/data/models/product.dart';
+import 'package:smartcart/features/home/view/home_page.dart';
+import 'package:smartcart/features/cart/view/cart_page.dart';
+import 'package:smartcart/features/details/view/details_page.dart';
 
 final router = GoRouter(
   routes: [

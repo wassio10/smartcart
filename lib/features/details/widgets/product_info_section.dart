@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smartcart/models/product.dart';
+import 'package:smartcart/data/models/product.dart';
 
 class ProductInfoSection extends StatelessWidget {
   final Product product;

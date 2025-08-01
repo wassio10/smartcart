@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:smartcart/models/product.dart';
+import 'package:smartcart/data/models/product.dart';
 
 class ProductRepository {
   final Dio _dio = Dio();

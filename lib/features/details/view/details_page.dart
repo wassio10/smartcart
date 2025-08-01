@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smartcart/models/product.dart';
-import 'package:smartcart/views/details/widgets/add_to_cart_button.dart';
-import 'package:smartcart/views/details/widgets/product_image.dart';
-import 'package:smartcart/views/details/widgets/product_info_section.dart';
-import 'package:smartcart/widgets/appbar.dart';
+import 'package:smartcart/data/models/product.dart';
+import 'package:smartcart/features/details/widgets/add_to_cart_button.dart';
+import 'package:smartcart/features/details/widgets/product_image.dart';
+import 'package:smartcart/features/details/widgets/product_info_section.dart';
 
 class DetailsPage extends StatelessWidget {
   final Product product;
@@ -12,7 +11,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(product.title),
+      appBar: AppBar(title: Text(product.title)),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

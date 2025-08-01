@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:smartcart/models/product.dart';
-import 'package:smartcart/repositories/product_repository.dart';
+import 'package:smartcart/data/models/product.dart';
+import 'package:smartcart/data/repositories/product_repository.dart';
 
 final productsProvider = FutureProvider<List<Product>>((ref) async {
   return ProductRepository().fetchProducts();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:smartcart/viewmodels/products_viewmodel.dart';
-import 'package:smartcart/views/home/widgets/product_card.dart';
+import 'package:smartcart/shared/providers/products_provider.dart';
+import 'package:smartcart/features/home/widgets/product_card.dart';
 
 class ProductsGrid extends ConsumerWidget {
   const ProductsGrid({super.key});
